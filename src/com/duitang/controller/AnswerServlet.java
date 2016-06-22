@@ -71,11 +71,11 @@ public class AnswerServlet extends HttpServlet{
      * @return 转化后的Int数组
      */
     public int[] stringArrToIntArr(String[] stringArr){
-    		int[] intArr = new int[stringArr.length];
-    		for(int i = 0;i < stringArr.length;i++){  
-    			intArr[i] = Integer.parseInt(stringArr[i]);
-    		}
-    		return intArr;
+    	int[] intArr = new int[stringArr.length];
+    	for(int i = 0;i < stringArr.length;i++){  
+    		intArr[i] = Integer.parseInt(stringArr[i]);
+    	}
+    	return intArr;
     }
     
     /**
@@ -84,14 +84,14 @@ public class AnswerServlet extends HttpServlet{
      * @return
      */
     public String intArrToString(int[] intArr){
-    		StringBuffer sb = new StringBuffer();
-    		for(int i = 0;i < intArr.length;i++){  
-    			if(i != intArr.length - 1)
-    				sb.append(String.valueOf(intArr[i] + ","));
-    			else
-    				sb.append(String.valueOf(intArr[i]));
-    		}
-    		return sb.toString();
+	StringBuffer sb = new StringBuffer();
+	for(int i = 0;i < intArr.length;i++){  
+		if(i != intArr.length - 1)
+			sb.append(String.valueOf(intArr[i] + ","));
+		else
+			sb.append(String.valueOf(intArr[i]));
+	}
+	return sb.toString();
     }
     
 }
