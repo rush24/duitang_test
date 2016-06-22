@@ -6,5 +6,5 @@
 由于题目没有明确要求，该接口仅对输入参数值为空进行校验提醒，对于参数具体格式限制没有做校验。  
 # 实现
 - 应题目要求和问题规模，该接口实现采用原生`Servlet`开发，轻量高效。
-- 核心算法正好和我之前写的一篇[博客](http://blog.csdn.net/xiaotan24/article/details/50786796)很相似，时间复杂度为`O(n)`。
+- 核心算法正好和我之前写的一篇博客基本一致，时间复杂度为`O(n)`。[查看这篇博客](http://blog.csdn.net/xiaotan24/article/details/50786796)
 - 具体代码见`com.duitang.controller.AnswerServlet`类
