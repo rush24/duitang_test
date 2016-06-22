@@ -22,7 +22,7 @@ public class AnswerServlet extends HttpServlet{
 		String inputString = request.getParameter("I");//获取输入参数
 		String outputString;//输出字符串
 		
-		if(inputString != null && inputString != ""){//对输入参数进行初步校验
+		if(inputString != null && !"".equals(inputString)){//对输入参数进行初步校验
 			String[] inputArr = inputString.split(",");//按逗号分隔
 			int[] outputArr = productExceptSelf(stringArrToIntArr(inputArr));//计算
 			outputString = intArrToString(outputArr);//toString
